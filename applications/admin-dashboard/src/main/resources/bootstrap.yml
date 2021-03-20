@@ -1,0 +1,12 @@
+envs:
+  config-server.url: http://127.0.0.1:8888
+
+server:
+  port: 8085
+spring:
+  application:
+    name: admin-dashboard
+  cloud:
+    config:
+      uri: ${envs.config-server.url}
+      fail-fast: true

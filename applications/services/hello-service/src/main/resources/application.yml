@@ -1,0 +1,13 @@
+envs:
+  config-server.url: http://127.0.0.1:8888
+
+server:
+  port: 8080
+spring:
+  application:
+    name: hello-service
+  cloud:
+    config:
+      uri: ${envs.config-server.url}
+      fail-fast: true
+
