@@ -10,7 +10,7 @@ import reactor.core.publisher.Flux;
 @RestController
 public class HystrixController {
 
-	@GetMapping("hystrix")
+	@GetMapping("hello/hystrix")
 	Flux<String> hystrix(@RequestParam(defaultValue = "false", name = "shouldFail") boolean shouldFail) {
 		return HystrixCommands.from(fetchMessages(shouldFail))
 							  .fallback(Flux.empty())

@@ -1,0 +1,36 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://127.0.0.1:8761/eureka/
+
+server:
+  port: 8082
+
+# Example how to configure using properties
+
+#spring:
+#  cloud:
+#    gateway:
+#      routes:
+#        - id: hello-service
+#          uri: lb://hello-service
+#          predicates:
+#            - Path=/api/v1/hello/**
+#          filters:
+#            - RewritePath=/api/v1/(?<path>.*), /$\{path}
+#        - id: user-service
+#          uri: lb://user-service
+#          predicates:
+#            - Path=/api/v1/users/**
+#          filters:
+#            - RewritePath=/api/v1/(?<path>.*), /$\{path}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

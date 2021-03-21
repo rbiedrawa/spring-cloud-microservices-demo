@@ -1,0 +1,10 @@
+envs:
+  config-server.url: http://127.0.0.1:8888
+
+spring:
+  application:
+    name: api-gateway
+  cloud:
+    config:
+      uri: ${envs.config-server.url}
+      fail-fast: true
