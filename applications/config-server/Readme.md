@@ -35,4 +35,4 @@ Start application:
 | Name | Endpoint | 
 | -------------:|:--------:|
 | `Config Server` | http://localhost:8888/ |
-| `Service configuration for specific env` | http://localhost:8888/<SERVICE_NAME>/<PROFILE> |
+| `Service configuration for specific env` | `http://localhost:8888/<SERVICE_NAME>/<PROFILE>` |
