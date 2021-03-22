@@ -12,7 +12,7 @@ Additionally, application implements 'Circuit Breaker' pattern using Netflix Hys
 
 * Running [config-server](../../config-server).
 * Running [service-registry](../../service-registry).
-* Running [zipkin](../../..) server.
+* Running [zipkin](./../../../Readme.md) server.
 * Running [admin-dashboard](../../admin-dashboard).
 * Running [user-service](../user-service).
 

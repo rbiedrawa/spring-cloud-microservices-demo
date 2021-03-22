@@ -10,7 +10,7 @@ Application supports distributed tracing(Spring Cloud Sleuth, Zipkin) and OpenAP
 
 * Running [config-server](../../config-server).
 * Running [service-registry](../../service-registry).
-* Running [zipkin](../../..) server.
+* Running [zipkin](./../../../Readme.md) server.
 * Running [admin-dashboard](../../admin-dashboard).
 
 ### Installation
