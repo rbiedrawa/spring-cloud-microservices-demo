@@ -14,7 +14,7 @@ Additional integrations done:
 
 * Running [config-server](../config-server).
 * Running [service-registry](../service-registry).
-* Running [zipkin](../..) server.doc
+* Running [zipkin](../../.) server.
 * Running [admin-dashboard](../admin-dashboard).
 * Running [user-service](../services/user-service).
 * Running [hello-service](../services/hello-service).
