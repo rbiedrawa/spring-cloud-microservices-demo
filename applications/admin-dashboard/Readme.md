@@ -2,7 +2,12 @@
 
 Admin Dashboard is Spring Boot Admin application that provides a monitoring interface for Spring Boot applications.
 
+![spring-boot-admin](./../../_docs/img/spring-boot-admin.png)
+
+
 Additionally, application adds custom [Hystrix Dashboard](https://github.com/Netflix-Skunkworks/hystrix-dashboard/) view module.
+
+![spring-boot-admin-hystrix](./../../_docs/img/spring-boot-admin-hystrix.png)
 
 ## Getting Started
 

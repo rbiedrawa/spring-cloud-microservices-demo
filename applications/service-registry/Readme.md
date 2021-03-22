@@ -27,7 +27,7 @@ Start application:
 * Start service.
 
 * Open [service-registry web ui](http://localhost:8761/).
-
+    ![eureka](./../../_docs/img/eureka.png)
 ### Build
 
 ```
