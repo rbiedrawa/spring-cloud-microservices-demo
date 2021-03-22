@@ -2,11 +2,14 @@ plugins {
 	id 'org.springframework.boot' version '2.3.9.RELEASE'
 	id 'io.spring.dependency-management' version '1.0.11.RELEASE'
 	id 'java'
+	id "com.google.cloud.tools.jib" version "2.8.0"
 }
 
 group = 'com.rbiedrawa.cloud.microservices'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
+
+jib.to.image = "${project.group}/${project.name}:${project.version}"
 
 configurations {
 	compileOnly {

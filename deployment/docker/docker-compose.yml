@@ -7,7 +7,81 @@ networks:
 services:
   zipkin:
     image: openzipkin/zipkin
+    container_name: zipkin
+    restart: always
     ports:
       - "9411:9411" # ZooKeeper
+    networks:
+      - dev
+
+  config-server:
+    image: com.rbiedrawa.cloud.microservices/config-server:0.0.1-SNAPSHOT
+    container_name: config-server
+    restart: always
+    ports:
+      - 8888:8888
+    environment:
+      spring.profiles.active: native
+    networks:
+      - dev
+
+  service-registry:
+    image: com.rbiedrawa.cloud.microservices/service-registry:0.0.1-SNAPSHOT
+    container_name: service-registry
+    restart: always
+    ports:
+      - 8761:8761
+    environment:
+      spring.profiles.active: dev
+      envs.config-server.url: "http://config-server:8888"
+    networks:
+      - dev
+
+  admin-dashboard:
+    image: com.rbiedrawa.cloud.microservices/admin-dashboard:0.0.1-SNAPSHOT
+    container_name: admin-dashboard
+    restart: always
+    ports:
+      - 8085:8085
+    environment:
+      spring.profiles.active: dev
+      envs.config-server.url: "http://config-server:8888"
+    networks:
+      - dev
+
+  api-gateway:
+    image: com.rbiedrawa.cloud.microservices/api-gateway:0.0.1-SNAPSHOT
+    container_name: api-gateway
+    restart: always
+    ports:
+      - 8082:8082
+    environment:
+      spring.profiles.active: dev
+      envs.config-server.url: "http://config-server:8888"
+    networks:
+      - dev
+
+#  Services:
+  hello-service:
+    image: com.rbiedrawa.cloud.microservices/hello-service:0.0.1-SNAPSHOT
+    container_name: hello-service
+    restart: always
+    ports:
+      - 8080:8080
+    environment:
+      spring.profiles.active: dev
+      envs.config-server.url: "http://config-server:8888"
+    networks:
+      - dev
+
+  user-service:
+    image: com.rbiedrawa.cloud.microservices/user-service:0.0.1-SNAPSHOT
+    container_name: user-service
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      spring.profiles.active: dev
+      envs.config-server.url: "http://config-server:8888"
     networks:
       - dev

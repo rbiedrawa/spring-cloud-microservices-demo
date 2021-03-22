@@ -29,9 +29,6 @@ public class HelloController {
 
 	@GetMapping("{userId}")
 	Mono<HelloMessage> sayHello(@PathVariable Long userId) {
-		return HystrixCommands.from(userService.findOne(userId).map(HelloMessage::from))
-							  .fallback(Mono.empty())
-							  .commandName("sayHello")
-							  .toMono();
+		return userService.findOne(userId).map(HelloMessage::from);
 	}
 }
