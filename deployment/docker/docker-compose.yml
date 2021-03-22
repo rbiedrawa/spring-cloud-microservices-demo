@@ -1,0 +1,13 @@
+version: '2'
+
+networks:
+  dev:
+    driver: bridge
+
+services:
+  zipkin:
+    image: openzipkin/zipkin
+    ports:
+      - "9411:9411" # ZooKeeper
+    networks:
+      - dev

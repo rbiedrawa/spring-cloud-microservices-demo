@@ -7,6 +7,14 @@ eureka:
     serviceUrl:
       defaultZone: http://127.0.0.1:8761/eureka/
 
+spring:
+  zipkin:
+    base-url: "http://127.0.0.1:9411/"
+  sleuth:
+    sampler:
+      probability: 1 # Dont do it in production
+      rate: 10
+
 springdoc:
   api-docs:
     enabled: true
