@@ -30,7 +30,7 @@ This demo consists of 7 different services:
 
 ## Architecture
 
-
+![architecture-diagram](./_docs/img/architecture.png)
 
 ## Getting Started
 
