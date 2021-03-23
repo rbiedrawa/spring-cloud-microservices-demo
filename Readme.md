@@ -15,6 +15,16 @@ Patterns, technologies demonstrated here:
 
 ## Table of Content
 
+- [Services](#services)
+- [Architecture](#architecture)
+- [Getting Started](#getting-started)
+  * [Installation](#installation)
+    + [Local](#local)
+    + [Docker](#docker)
+  * [Usage](#usage)
+- [References](#references)
+- [License](#license)
+
 ## Services
 
 This demo consists of 7 different services:
