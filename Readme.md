@@ -29,7 +29,6 @@ Patterns, technologies demonstrated here:
 
 ![architecture-diagram](./_docs/img/architecture.png)
 
-
 ## Services
 
 This demo consists of 7 different services:
@@ -109,7 +108,15 @@ Please refer to the individual readme files on instructions of how to run/build 
 
 ## References
 
+* [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
+* [Spring Cloud Config](https://cloud.spring.io/spring-cloud-config)
 * [Spring Cloud Netflix](https://spring.io/projects/spring-cloud-netflix)
+* [Eureka](https://github.com/Netflix/eureka)
+* [Spring Boot Admin](https://github.com/codecentric/spring-boot-admin)
+* [Hystrix - Circuit Breaker](https://github.com/Netflix/Hystrix)
+* [Hystrix Dashboard for Spring Boot Admin 2.x](https://github.com/MartinDevillers/spring-boot-admin-hystrix-dashboard)
+* [Hystrix Dashboard](https://github.com/Netflix-Skunkworks/hystrix-dashboard/)
+* [Zipkin](https://zipkin.io/)
 
 ## License
 
