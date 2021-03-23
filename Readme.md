@@ -15,8 +15,8 @@ Patterns, technologies demonstrated here:
 
 ## Table of Content
 
-- [Services](#services)
 - [Architecture](#architecture)
+- [Services](#services)
 - [Getting Started](#getting-started)
   * [Installation](#installation)
     + [Local](#local)
@@ -24,6 +24,11 @@ Patterns, technologies demonstrated here:
   * [Usage](#usage)
 - [References](#references)
 - [License](#license)
+
+## Architecture
+
+![architecture-diagram](./_docs/img/architecture.png)
+
 
 ## Services
 
@@ -36,11 +41,6 @@ This demo consists of 7 different services:
 5. [hello-service](./applications/services/hello-service)
 6. [user-service](./applications/services/user-service)
 7. zipkin
-
-
-## Architecture
-
-![architecture-diagram](./_docs/img/architecture.png)
 
 ## Getting Started
 
