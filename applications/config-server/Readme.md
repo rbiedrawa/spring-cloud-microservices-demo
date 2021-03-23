@@ -4,6 +4,9 @@ Spring Boot application that provides server-side and client-side support for ex
 
 With the Config Server, you have a central place to manage external properties for applications across all environments.
 
+Note that the external configuration can be hosted either on GitHub or on local file system, for demo purpose we'll use classpath resources.
+
+
 ## Getting Started
 
 ### Installation

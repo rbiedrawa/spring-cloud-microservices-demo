@@ -1,12 +1,11 @@
 # Api Gateway
 
-API Gateway for microservices that provides a simple way to route to APIs.
+API Gateway is an edge service that provides a single-entry point for certain groups of microservices.
 
-Additional integrations done:
+It acts as unified “front door” to our ecosystem.
 
-* Circuit Breaker (Hystrix)
-* Discovery Client (Ribbon, Eureka)
-* Reactive
+Additionally, gateway is integrated with Hystrix for fault tolerance(Circuit Breaker) and Eureka for service discovery.
+
 
 ## Getting Started
 
