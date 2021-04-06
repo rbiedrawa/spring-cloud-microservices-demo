@@ -1,6 +1,6 @@
 # Spring Cloud Netflix OSS Microservices (Demo)
 
-Microservices demo using Netflix OSS and Spring Cloud frameworks. 
+Microservices demo using Netflix OSS and Spring Cloud framework. 
 
 Patterns, technologies demonstrated here: 
 
