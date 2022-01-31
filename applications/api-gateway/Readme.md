@@ -9,7 +9,7 @@ Additionally, gateway is integrated with Hystrix for fault tolerance(Circuit Bre
 
 ## Getting Started
 
-### Prerequisite
+### Prerequisites
 
 * Running [config-server](../config-server).
 * Running [service-registry](../service-registry).
