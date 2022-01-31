@@ -6,7 +6,7 @@ Application supports distributed tracing(Spring Cloud Sleuth, Zipkin) and OpenAP
 
 ## Getting Started
 
-### Prerequisite
+### Prerequisites
 
 * Running [config-server](../../config-server).
 * Running [service-registry](../../service-registry).
