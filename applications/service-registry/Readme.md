@@ -10,7 +10,7 @@ or some form of convention can be very difficult to do and can be very brittle.
 
 ## Getting Started
 
-### Prerequisite
+### Prerequisites
 
 * Running [config-server](../config-server).
 
